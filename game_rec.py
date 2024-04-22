@@ -9,8 +9,6 @@ import tensorflow as tf
 
 
 
-# train_path = r"C:\Users\Theo\Documents\Advanced Analytics\train_images"
-# test_path = r"C:\Users\Theo\Documents\Advanced Analytics\testimages"
 
 
 # Step 1: Read the JSON file and extract image filenames and corresponding tags
@@ -43,8 +41,8 @@ def preprocess_images(image_data, image_dir, target_size=(224, 224)):
     return preprocessed_data 
 
 # Example usage
-image_dir = r"C:\Users\Theo\Documents\Advanced Analytics\images_downscaled"
-json_file = r"C:\Users\Theo\Documents\Advanced Analytics\datasetj.json"
+image_dir = r"Path\images_downscaled"
+json_file = r"Path\datasetj.json"
 image_data = read_json(json_file)
 preprocessed_data = preprocess_images(image_data, image_dir)
 print(f"Preprocessed {len(preprocessed_data)} images")
@@ -155,5 +153,5 @@ history = model.fit(X_train,
 loss, acc = model.evaluate(X_test, y_test, verbose=2)
 print("Model, accuracy: {:5.2f}%".format(100 * acc))
 
-model.save('C:\\Users\\Theo\\Documents\\Advanced Analytics\\multilabel_classification_model.keras')
+model.save('C:\\Path\\multilabel_classification_model.keras')
 
