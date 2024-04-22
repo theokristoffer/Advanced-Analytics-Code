@@ -8,6 +8,6 @@ It should also be noted that the tags are not hot one encoded, so that must also
 
 The program provided does all of the above, and saves the model into a .keras file so that it can be reimported and tested against new data or implemented directly. 
 
-There is also an optional python file that resizes the original images, which were quite large in storage space, to half size. This reduces the folder size to around 8GB. 
+There is also an optional python file that resizes the original images, which were quite large in storage space, to half size. This reduces the folder size to around 8GB. The 8GB-sized folder is the data used in the actual model.
 
 
