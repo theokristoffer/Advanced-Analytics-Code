@@ -1,3 +1,5 @@
+The code for the 4 assignments in the course Advanced Analytics are placed here. There are additional files, such as csv or txt files for outputs from some of the programs. 
+
 # Multilabel Image Classification Model 
 
 The original dataset is a 45GB folder containing 1920x1080 screenshots of different videogames from the Steam catalogue. There is also a JSON file with different attributes, including price (numeric), tags (categorical), and game names. The JSON file also includes the names of multiple screenshots per game, with the name exactly matching the name in the image folder. The data is formatted in the JSON file as a list of dictionaries, with each dictionary corresponding to a different game, which has the aforementioned attributes. 
